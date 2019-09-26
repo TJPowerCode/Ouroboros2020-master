@@ -28,7 +28,6 @@ public class DriveTrain {
     public double proportional;
     public double error;
     public double time;
-    public boolean emptyCommitTest;
 
 
     public void initDriveTrain(LinearOpMode opMode) {
