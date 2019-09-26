@@ -28,6 +28,7 @@ public class DriveTrain {
     public double proportional;
     public double error;
     public double time;
+    public boolean emptyCommitTest;
 
 
     public void initDriveTrain(LinearOpMode opMode) {
@@ -41,7 +42,6 @@ public class DriveTrain {
         bl = this.opMode.hardwareMap.dcMotor.get("bl");
         br = this.opMode.hardwareMap.dcMotor.get("br");
 
-        //EPIC EASTER EGG
         //Sets Motor Directions
         fl.setDirection(DcMotor.Direction.REVERSE);
         fr.setDirection(DcMotor.Direction.FORWARD);
